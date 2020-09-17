@@ -1,1 +1,7 @@
 target/
+.idea/*.*
+.idea/$CACHE_FILE$
+.idea/codeStyles/*.*
+.idea/libraries/*.*
+.idea/modules/*.*
+

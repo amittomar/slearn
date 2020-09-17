@@ -1,7 +1,7 @@
 package example
 
 /**
- * Tower of Hanoi problem
+ * Tower of Hanoi problem to understand recursive function.
  */
 object Hanoi {
    def move(from:String, to:String): Any ={

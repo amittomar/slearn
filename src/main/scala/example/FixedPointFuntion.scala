@@ -3,11 +3,20 @@ package example
 import scala.annotation.tailrec
 import scala.math.abs
 
-object exercise extends App {
+/**
+ * Approximate a fixed point function.
+ * Fixed point function is a function where (x,f(x)) lies on x = y line.
+ *
+ *
+ */
+object FixedPointFuntion extends App {
   val tolerance = 0.0001
   def isCloseEnough(x:Double,y:Double) =
     abs((x-y)/x)/x < tolerance
 
+  /**
+   *  Given a first guess, Approximate a fixed point function with a defined precision
+   */
   def fixedPoint(f: Double =>Double)(firstGuess: Double)={
     @tailrec
     def iterate(guess: Double):Double ={

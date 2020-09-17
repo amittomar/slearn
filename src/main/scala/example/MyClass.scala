@@ -1,12 +1,8 @@
 package example
-
-import scala.::
-
+/** TODo Class needs cleaning.  */
 class MyClass(x: Int,y:Int) {
 
   require(y>0,"Y must be positive")
-
-//  def this(x:Int) = printl("dfsfa")
 
   def sum(x: Int, y: Int) = x + y
   def nb1 = x

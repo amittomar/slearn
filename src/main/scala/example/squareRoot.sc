@@ -1,4 +1,3 @@
-println(1+3)
 
 def abs(d: Double) = if (d < 0) -d else d
 
