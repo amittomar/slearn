@@ -10,7 +10,7 @@ import scala.math.abs
  *
  */
 object FixedPointFuntion extends App {
-  val tolerance = 0.0001
+  val tolerance = 0.00001
   def isCloseEnough(x:Double,y:Double) =
     abs((x-y)/x)/x < tolerance
 
@@ -21,12 +21,14 @@ object FixedPointFuntion extends App {
     @tailrec
     def iterate(guess: Double):Double ={
       val next = f(guess)
+      println(next)
       if(isCloseEnough(guess, next)) next
       else iterate(next)
     }
     iterate(firstGuess)
   }
 
-  print(fixedPoint(x=> 1+x/2)(1))
+  //print(fixedPoint(x=> 1+x/2)(1))
+  print(fixedPoint(x=> math.pow(x,2) -3*x+4)(firstGuess = 1))
 
 }
